@@ -1,7 +1,10 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import LoveClicker from "./LoveClicker";
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import LoveClicker from './LoveClicker.jsx';
+import './index.css'; // optional styling
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<LoveClicker />);
-
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
+    <LoveClicker />
+  </React.StrictMode>
+);
